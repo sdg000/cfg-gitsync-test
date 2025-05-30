@@ -1,0 +1,28 @@
+# this is a cfn template
+AWSTemplateFormatVersion: "2010-09-09"
+Description: CloudFormation template to create an S3 bucket named abc471651abc
+
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: abc471651abc
+  SecondS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: soething652cane
+  # ThirdS3Bucket:
+  #   Type: AWS::S3::Bucket
+  #   Properties:
+  #     BucketName: soet45cxg652cane
+
+Outputs:
+  S3BucketName:
+    Description: Name of the created S3 bucket
+    Value: !Ref MyS3Bucket
+  SecondS3BucketName:
+    Description: Name of the second S3 bucket
+    Value: !Ref SecondS3Bucket
+  # ThirdS3BucketName:
+  #   Description: Name of the second S3 bucket
+  #   Value: !Ref ThirdS3Bucket
