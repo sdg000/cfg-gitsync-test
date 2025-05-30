@@ -14,7 +14,7 @@ Resources:
   ThirdS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: thirdS3Bucket56573434
+      BucketName: thirds3bucket56573434
 
 Outputs:
   S3BucketName:
